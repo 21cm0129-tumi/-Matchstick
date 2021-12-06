@@ -15,7 +15,6 @@ struct ContentView: View {
     @AppStorage("l") var inputText2 = ""
     var body: some View {
         ZStack{
-            
             NavigationView {
                 
                 VStack{
@@ -59,21 +58,18 @@ struct ContentView: View {
                         .navigationTitle("")
                     
                     
-               
+                    
                     Spacer()
                     HStack{
                         Spacer()
                         NavigationLink(
-                            destination: SecondContentView()){
-                           
-                               
+                            destination: SecondContentView(inputText1: inputText1,  inputText2: inputText2)){
                             
-                       
-                            }
+                            Text("決定")
+                            
+                        }
                         
                     }
-                    
-           
                     .navigationTitle("")
                 }
                 
