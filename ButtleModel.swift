@@ -50,6 +50,12 @@ class ButtleViewModel: ObservableObject {
     @Published var hand3Image: String = "finger_1"
     @Published var hand4Image: String = "finger_1"
     
+    @Published var isWinLoss: Bool = false //勝敗がつく
+    
+    @Published var is1pWin: Bool = false //勝ち：true まけ：false
+    @Published var is2pWin: Bool = false
+    
+    
 
     // 1回目の手選択
     func firstHand(_ hand: Int) {
@@ -356,10 +362,16 @@ class ButtleViewModel: ObservableObject {
     func checkLoss() {
         if hand1 == 0 && hand2 == 0 {
             print("1pまけ")
+            isWinLoss = true
+            is1pWin = false
+            is2pWin = true
         }
         
         if hand3 == 0 && hand4 == 0 {
             print("2pまけ")
+            isWinLoss = true
+            is1pWin = true
+            is2pWin = false
         }
     }
     
