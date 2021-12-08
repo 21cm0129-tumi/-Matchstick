@@ -12,6 +12,7 @@
 		7F00B4E1275C972B004D2637 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F00B4E0275C972B004D2637 /* Preview Assets.xcassets */; };
 		7F00B4EB275D9874004D2637 /* ButtleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F00B4E9275D9874004D2637 /* ButtleView.swift */; };
 		7F00B4EC275D9874004D2637 /* ButtleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F00B4EA275D9874004D2637 /* ButtleModel.swift */; };
+		7F46A90C276121210097F5D6 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46A90B276121200097F5D6 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7F00B4E2275C972B004D2637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F00B4E9275D9874004D2637 /* ButtleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtleView.swift; sourceTree = "<group>"; };
 		7F00B4EA275D9874004D2637 /* ButtleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtleModel.swift; sourceTree = "<group>"; };
+		7F46A90B276121200097F5D6 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				7F00B4D9275C9726004D2637 /* MatchStickApp.swift */,
+				7F46A90B276121200097F5D6 /* ResultView.swift */,
 				7F00B4EA275D9874004D2637 /* ButtleModel.swift */,
 				7F00B4E9275D9874004D2637 /* ButtleView.swift */,
 				7F00B4DD275C972B004D2637 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F00B4EC275D9874004D2637 /* ButtleModel.swift in Sources */,
+				7F46A90C276121210097F5D6 /* ResultView.swift in Sources */,
 				7F00B4EB275D9874004D2637 /* ButtleView.swift in Sources */,
 				7F00B4DA275C9726004D2637 /* MatchStickApp.swift in Sources */,
 			);
