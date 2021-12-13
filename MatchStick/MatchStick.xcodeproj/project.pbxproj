@@ -11,8 +11,11 @@
 		7F00B4DE275C972B004D2637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F00B4DD275C972B004D2637 /* Assets.xcassets */; };
 		7F00B4E1275C972B004D2637 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F00B4E0275C972B004D2637 /* Preview Assets.xcassets */; };
 		7F00B4EB275D9874004D2637 /* ButtleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F00B4E9275D9874004D2637 /* ButtleView.swift */; };
-		7F00B4EC275D9874004D2637 /* ButtleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F00B4EA275D9874004D2637 /* ButtleModel.swift */; };
 		7F46A90C276121210097F5D6 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46A90B276121200097F5D6 /* ResultView.swift */; };
+		7F6AA7062761FAE400EBC406 /* ButtleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AA7052761FAE400EBC406 /* ButtleModel.swift */; };
+		7F6AA712276203D100EBC406 /* ValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AA711276203D100EBC406 /* ValueManager.swift */; };
+		CC4BAA6A2766CD5B00098D94 /* startgamen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BAA692766CD5B00098D94 /* startgamen.swift */; };
+		CC4BAA6C2766CD8C00098D94 /* formName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BAA6B2766CD8C00098D94 /* formName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +25,11 @@
 		7F00B4E0275C972B004D2637 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F00B4E2275C972B004D2637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F00B4E9275D9874004D2637 /* ButtleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtleView.swift; sourceTree = "<group>"; };
-		7F00B4EA275D9874004D2637 /* ButtleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtleModel.swift; sourceTree = "<group>"; };
 		7F46A90B276121200097F5D6 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7F6AA7052761FAE400EBC406 /* ButtleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtleModel.swift; sourceTree = "<group>"; };
+		7F6AA711276203D100EBC406 /* ValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueManager.swift; sourceTree = "<group>"; };
+		CC4BAA692766CD5B00098D94 /* startgamen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startgamen.swift; sourceTree = "<group>"; };
+		CC4BAA6B2766CD8C00098D94 /* formName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				7F00B4D9275C9726004D2637 /* MatchStickApp.swift */,
-				7F46A90B276121200097F5D6 /* ResultView.swift */,
-				7F00B4EA275D9874004D2637 /* ButtleModel.swift */,
+				CC4BAA692766CD5B00098D94 /* startgamen.swift */,
+				CC4BAA6B2766CD8C00098D94 /* formName.swift */,
 				7F00B4E9275D9874004D2637 /* ButtleView.swift */,
+				7F6AA7052761FAE400EBC406 /* ButtleModel.swift */,
+				7F6AA711276203D100EBC406 /* ValueManager.swift */,
+				7F46A90B276121200097F5D6 /* ResultView.swift */,
 				7F00B4DD275C972B004D2637 /* Assets.xcassets */,
 				7F00B4E2275C972B004D2637 /* Info.plist */,
 				7F00B4DF275C972B004D2637 /* Preview Content */,
@@ -144,9 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F00B4EC275D9874004D2637 /* ButtleModel.swift in Sources */,
 				7F46A90C276121210097F5D6 /* ResultView.swift in Sources */,
+				CC4BAA6A2766CD5B00098D94 /* startgamen.swift in Sources */,
+				7F6AA7062761FAE400EBC406 /* ButtleModel.swift in Sources */,
+				7F6AA712276203D100EBC406 /* ValueManager.swift in Sources */,
 				7F00B4EB275D9874004D2637 /* ButtleView.swift in Sources */,
+				CC4BAA6C2766CD8C00098D94 /* formName.swift in Sources */,
 				7F00B4DA275C9726004D2637 /* MatchStickApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +289,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MatchStick/Preview Content\"";
-				DEVELOPMENT_TEAM = X5Y78H7367;
+				DEVELOPMENT_TEAM = 324MTX4FN6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MatchStick/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -299,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MatchStick/Preview Content\"";
-				DEVELOPMENT_TEAM = X5Y78H7367;
+				DEVELOPMENT_TEAM = 324MTX4FN6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MatchStick/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

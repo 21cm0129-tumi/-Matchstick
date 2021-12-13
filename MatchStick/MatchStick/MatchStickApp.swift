@@ -11,7 +11,7 @@ import SwiftUI
 struct MatchStickApp: App {
     var body: some Scene {
         WindowGroup {
-            ButtleView()
+            startgamen()
         }
     }
 }

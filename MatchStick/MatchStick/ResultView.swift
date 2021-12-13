@@ -13,24 +13,36 @@ import Foundation
 
 struct ResultView: View {
     @State var isPresented = false
+    
     var body: some View {
         
-        VStack{
-        
-            Button(action: {
-                self.isPresented.toggle()
-            }, label: {
-                Text("button")
-                    .font(.title)
-            })
-            
-       Image("win")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .opacity($isPresented.wrappedValue ? 1 : 0)
-            .scaleEffect($isPresented.wrappedValue ? 1 : 0)
-            .animation(.spring(response: 0.2, dampingFraction: 0.6, blendDuration: 0))
+        ZStack{
+            VStack{
+                
+                
+                Image("win")
+                     .resizable()
+                     .aspectRatio(contentMode: .fit)
+                     .opacity($isPresented.wrappedValue ? 1 : 0)
+                     .scaleEffect($isPresented.wrappedValue ? 1 : 0)
+                     .animation(.spring(response: 0.2, dampingFraction: 0.6, blendDuration: 0))
+                
+                
+            }
+
+//            Button(action: {
+//                isMoving.toggle()
+//            }) {
+//                Text("M")
+//
+//            }
+//            .fullScreenCover(isPresented: self.$isMoving){
+//                formName()
+//            }
         }
+            
+            
+                    
     }
 }
 

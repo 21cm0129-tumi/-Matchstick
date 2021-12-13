@@ -10,9 +10,13 @@
 import SwiftUI
 import Foundation
 
-struct ButtleView: View {
+struct ButtleView : View {
     
     @ObservedObject var buttleViewModel = ButtleViewModel()
+    let inputText1: String
+    let inputText2: String
+//    let kirikae = false
+    @State var isMoving = false
     
     var body: some View {
         
@@ -61,6 +65,9 @@ struct ButtleView: View {
                         
                         Text(buttleViewModel.name1p)
                             .font(.largeTitle)
+                        
+                        Text("\(inputText1)")
+                            .font(.largeTitle)
                     }
                     //ここにresult
                     if buttleViewModel.isWinLoss {
@@ -70,6 +77,7 @@ struct ButtleView: View {
                             ResultLoseView()
                         }
                     }
+                    
                 }
             }
             .rotationEffect(.degrees(180))
@@ -78,13 +86,32 @@ struct ButtleView: View {
             Group {
                 Spacer()
                 
-                Text(buttleViewModel.txt1p)
-                    .font(.title)
-                    .rotationEffect(.degrees(180))
                 
-                Text(buttleViewModel.txt2p)
-                    .font(.title)
+                if buttleViewModel.kirikae == false {
+                    
+                    Text(buttleViewModel.txt1p)
+                        .font(.title)
+                        .rotationEffect(.degrees(180))
+                    
+                    Text(buttleViewModel.txt2p)
+                        .font(.title)
+
+                }else{
+                    Button(action: {
+                        isMoving.toggle()
+                    }) {
+                        Text("もう一度!")
+                            .font(.largeTitle)
+                        
+                    }
+                    .fullScreenCover(isPresented: self.$isMoving){
+                        formName()
+                    }
+
+                }
                 
+                
+                                
                 Spacer()
             }
             
@@ -129,8 +156,14 @@ struct ButtleView: View {
                             Spacer()
                         }
                         
+                        
+                        
                         Text(buttleViewModel.name2p)
                             .font(.largeTitle)
+                        
+                        Text("\(inputText2)")
+                            .font(.largeTitle)
+                        
                     }
                     //ここにresult
                     if buttleViewModel.isWinLoss {
@@ -140,6 +173,7 @@ struct ButtleView: View {
                             ResultLoseView()
                         }
                     }
+                    
                 }
                 
                 
@@ -202,9 +236,9 @@ struct ResultLoseView: View {
 }
 
 
-
-struct ButtleView_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtleView()
-    }
-}
+//
+//struct ButtleView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ButtleView()
+//    }
+//}
